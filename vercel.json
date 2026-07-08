@@ -3,5 +3,11 @@
   "buildCommand": null,
   "outputDirectory": ".",
   "framework": null,
-  "cleanUrls": true
+  "cleanUrls": true,
+  "functions": {
+    "api/transform.js": {
+      "maxDuration": 30,
+      "memory": 256
+    }
+  }
 }
