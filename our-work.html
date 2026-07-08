@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Work | MonteStyle</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #FFFFFF; color: #111827; }
+        h1, h2, h3, .font-playfair { font-family: 'Playfair Display', serif; }
+        .text-gold { color: #C5A059; }
+        .bg-gold { background-color: #C5A059; }
+        .border-gold { border-color: #C5A059; }
+        .glass {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(0, 0, 0, 0.06);
+        }
+        .ba-slider { position: relative; overflow: hidden; cursor: ew-resize; }
+        .ba-img { display: block; width: 100%; height: 100%; object-fit: cover; pointer-events: none; }
+        .ba-after { position: absolute; top: 0; left: 0; width: 50%; height: 100%; overflow: hidden; pointer-events: none; }
+        .ba-handle { position: absolute; top: 0; bottom: 0; left: 50%; width: 4px; background: #C5A059; transform: translateX(-50%); pointer-events: none; z-index: 10; }
+        .ba-handle::after { content: '\2194'; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #C5A059; color: #FFFFFF; padding: 8px 12px; border-radius: 50%; font-weight: bold; font-size: 14px; }
+        @media (max-width: 768px) { .ba-handle::after { padding: 6px 10px; font-size: 12px; } }
+    </style>
+</head>
+<body class="antialiased">
+
+    <nav class="fixed top-0 w-full z-50 glass shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="font-playfair text-2xl font-bold text-gray-900">Monte<span class="text-gold">Style</span></a>
+            <div class="hidden md:flex space-x-8">
+                <a href="our-work.html" class="text-gold text-sm font-semibold transition">Our Work</a>
+                <a href="index.html#portfolio" class="text-sm text-gray-600 hover:text-gold transition">Portfolio</a>
+                <a href="index.html#services" class="text-sm text-gray-600 hover:text-gold transition">Services</a>
+                <a href="index.html#process" class="text-sm text-gray-600 hover:text-gold transition">Process</a>
+            </div>
+            <a href="index.html#lead-form" class="bg-gold text-white px-5 py-2.5 rounded text-sm font-semibold hover:bg-amber-800 transition shadow-lg shadow-gold/20">Free Consultation</a>
+        </div>
+    </nav>
+
+    <section class="pt-32 pb-20 px-6 bg-gradient-to-br from-white via-amber-50 to-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-20">
+                <p class="text-gold tracking-widest text-sm mb-4">BEFORE & AFTER</p>
+                <h1 class="text-5xl md:text-7xl text-gray-900 mb-6">Our Work</h1>
+                <p class="text-gray-500 text-lg max-w-2xl mx-auto">Every project tells a story. Drag the slider on each transformation to see the journey from outdated to extraordinary.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-10">
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="ba-slider w-full" style="height:320px" data-slider>
+                        <img src="https://images.unsplash.com/photo-1773579223066-4b54a17ec8cc?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80" class="ba-img" alt="After">
+                        <div class="ba-after">
+                            <img src="https://images.unsplash.com/photo-1722888799634-c5093906feae?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80" class="ba-img" alt="Before">
+                        </div>
+                        <div class="ba-handle"></div>
+                        <div class="absolute top-4 left-4 bg-white/80 text-gray-700 px-3 py-1 rounded text-xs shadow-sm">Before</div>
+                        <div class="absolute top-4 right-4 bg-gold/90 text-white px-3 py-1 rounded text-xs">After</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-playfair text-gray-900 mb-1">Point Grey Modern Kitchen</h3>
+                        <p class="text-gray-500 text-sm">Complete gut renovation — custom white cabinetry, quartz island, and matte black fixtures.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="ba-slider w-full" style="height:320px" data-slider>
+                        <img src="https://images.unsplash.com/photo-1742280879518-ada47b660ccd?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80" class="ba-img" alt="After">
+                        <div class="ba-after">
+                            <img src="https://images.unsplash.com/photo-1773754767059-d645ebf55539?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80" class="ba-img" alt="Before">
+                        </div>
+                        <div class="ba-handle"></div>
+                        <div class="absolute top-4 left-4 bg-white/80 text-gray-700 px-3 py-1 rounded text-xs shadow-sm">Before</div>
+                        <div class="absolute top-4 right-4 bg-gold/90 text-white px-3 py-1 rounded text-xs">After</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-playfair text-gray-900 mb-1">Kitsilano Chef's Kitchen</h3>
+                        <p class="text-gray-500 text-sm">Warm oak cabinetry replaced with sleek soft-close drawers, quartz counters, and smart appliances.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="ba-slider w-full" style="height:320px" data-slider>
+                        <img src="https://images.unsplash.com/photo-1771929662486-f793e08f0f16?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80" class="ba-img" alt="After">
+                        <div class="ba-after">
+                            <img src="https://images.unsplash.com/photo-1764551355886-d5b25e4b90b6?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80" class="ba-img" alt="Before">
+                        </div>
+                        <div class="ba-handle"></div>
+                        <div class="absolute top-4 left-4 bg-white/80 text-gray-700 px-3 py-1 rounded text-xs shadow-sm">Before</div>
+                        <div class="absolute top-4 right-4 bg-gold/90 text-white px-3 py-1 rounded text-xs">After</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-playfair text-gray-900 mb-1">Yaletown Spa Bathroom</h3>
+                        <p class="text-gray-500 text-sm">Vintage pedestal suite transformed into a marble spa with rain shower, backlit mirrors, and heated floors.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="ba-slider w-full" style="height:320px" data-slider>
+                        <img src="https://images.unsplash.com/photo-1776482128012-a47f853abd57?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80" class="ba-img" alt="After">
+                        <div class="ba-after">
+                            <img src="https://images.unsplash.com/photo-1762186541223-687a77a76b3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80" class="ba-img" alt="Before">
+                        </div>
+                        <div class="ba-handle"></div>
+                        <div class="absolute top-4 left-4 bg-white/80 text-gray-700 px-3 py-1 rounded text-xs shadow-sm">Before</div>
+                        <div class="absolute top-4 right-4 bg-gold/90 text-white px-3 py-1 rounded text-xs">After</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-playfair text-gray-900 mb-1">West Coast Living Room</h3>
+                        <p class="text-gray-500 text-sm">Closed-off retro layout opened up with floor-to-ceiling windows, custom millwork, and indoor-outdoor flow.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-16">
+                <a href="index.html#lead-form" class="inline-block bg-gold text-white px-10 py-4 rounded-lg font-semibold hover:bg-amber-800 transition shadow-lg shadow-gold/30 text-lg">Start Your Transformation</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 py-12 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8 text-gray-400 text-sm">
+            <div>
+                <h4 class="text-white font-playfair text-xl mb-4">Monte<span class="text-gold">Style</span></h4>
+                <p>Vancouver's premier home renovation and custom build experts.</p>
+            </div>
+            <div>
+                <h5 class="text-white font-semibold mb-4">Service Areas</h5>
+                <p>Vancouver, Burnaby, Richmond, North Vancouver, West Vancouver, Coquitlam</p>
+            </div>
+            <div>
+                <h5 class="text-white font-semibold mb-4">Contact</h5>
+                <p>Phone: (604) 555-0199</p>
+                <p>Email: hello@montestyle.ca</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function initSlider(sliderEl) {
+            const after = sliderEl.querySelector('.ba-after');
+            const handle = sliderEl.querySelector('.ba-handle');
+            let isDragging = false;
+            function moveSlider(x) {
+                let rect = sliderEl.getBoundingClientRect();
+                let pos = ((x - rect.left) / rect.width) * 100;
+                if (pos > 100) pos = 100;
+                if (pos < 0) pos = 0;
+                after.style.width = pos + '%';
+                handle.style.left = pos + '%';
+            }
+            function onDown(e) { isDragging = true; moveSlider(e.clientX || e.touches[0].clientX); }
+            function onUp() { isDragging = false; }
+            function onMove(e) { if (isDragging) moveSlider(e.clientX || e.touches[0].clientX); }
+            sliderEl.addEventListener('mousedown', onDown);
+            sliderEl.addEventListener('touchstart', onDown);
+            window.addEventListener('mouseup', onUp);
+            window.addEventListener('touchend', onUp);
+            window.addEventListener('mousemove', onMove);
+            window.addEventListener('touchmove', onMove);
+        }
+        document.querySelectorAll('[data-slider]').forEach(initSlider);
+    </script>
+</body>
+</html>
